@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 arama = st.text_input("Aramak istediğiniz kitabın baş harfini giriniz")
 if arama:
     ilk_harf = arama[0].upper()
@@ -9,5 +10,5 @@ if arama:
         for kitap in liste:
                 ayrinti = kitap.split("-")
                 if ayrinti[0] != "":
-                    st.write(F" Kitap Adı: :red[{ayrinti[0]}] Yazar Adı: :blue[{ayrinti[1]}] Yayın Evi :green[{ayrinti[2]}] Yayın Tarihi: :blue[ {ayrinti[3]} -{ayrinti[4]}]")
+                    st.write(F"Id :green[{ayrinti[0]}] Kitap Adı: :red[{ayrinti[1]}] Yazar Adı: :blue[{ayrinti[2]}] Yayın Evi :green[{ayrinti[2]}] Yayın Tarihi: :blue[ {ayrinti[3]} -{ayrinti[4]}]")
     
